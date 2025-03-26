@@ -1,0 +1,347 @@
+.navbar{
+    margin: auto;
+    background-color: whitesmoke;
+    position: fixed !important;
+    z-index: 1000 !important;
+    width: 100%;
+}
+
+.btn{
+    background-color: black !important;
+}
+
+.button a{
+    text-decoration: none;  
+    color: inherit;         
+    display: block; 
+}
+
+.container{
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1 rem;
+}
+
+.row{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.col{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media (min-width: 576px) {
+    .col {
+        display: flex;
+        flex: 1 0 0%;
+        justify-content: center;
+    }
+}
+
+.card-section{
+    padding-top: 50px;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black !important;
+    transition: transform 0s ease, box-shadow 0s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+
+.btn{
+    border-color: grey !important;
+    background-color: black !important;
+}
+
+.sec-btn{
+    background-image: url('../images/main/sincerely-media-ylveRpZ8L1s-unsplash.jpg.crdownload');
+    background-color: white;
+    background-size: cover;
+    color: black;
+    z-index: 1;
+}
+
+.btn:hover{
+    background-color: grey !important;
+    color: black !important;
+}
+
+
+.card-img-top{
+    object-fit: cover;
+    height: 180px !important;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-body{
+    padding: 1rem;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: 0s;
+  }
+
+.button{
+    background-color: whitesmoke;
+    color: black;
+    border-radius: black;
+    border-radius: 12px;
+    border-width: 2%;
+    padding: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+    justify-content: end;
+    justify-items: end;
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
+    border-radius: white;
+}
+
+
+/* SignUp Below CSS */
+
+
+.signup-section{
+    background: linear-gradient(0deg, rgb(50, 43, 87) 0%, rgb(100, 115, 191) 86%);
+    background-attachment: fixed;
+    margin:0;
+    font-family: 'Poppins', sans-serif; 
+    justify-content: center !important;
+    justify-items: center !important;
+    background-image: url('../images/main/unsplash-NuFUbftUu_s-unsplash.jpg');
+    background-size: cover;
+    position: relative;
+    padding: 1px;
+}
+
+
+#form{
+    width:400px;
+    margin:8vh auto 0 auto;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding:30px;
+}
+
+h1{
+    text-align: center;
+    color:black;
+}
+
+#form button{
+    background-color: black;
+    color:white;
+    border: 1px solid violet;
+    border-radius: 15px;
+    padding:10px;
+    margin:20px 0px;
+    cursor:pointer;
+    font-size:20px;
+    width:100% !important;
+}
+
+.butn:hover{
+    background-color: grey !important;
+    color: black !important;
+}
+
+.input-group{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-group input{
+    border-radius: 5px;
+    font-size:20px;
+    margin-top:5px;
+    padding:10px;
+    border:1px solid blue ;
+}
+
+.input-group input{
+    outline:0;
+    width: 90%;
+}
+
+.input-group input:focus{
+    outline:0;
+    width: 320px;
+}
+
+.input-group.error{
+    color:red;
+    font-size:16px;
+    margin-top: 5px;
+}
+
+.input-group.success input{
+    border-color: green;
+}
+
+.input-group.error input{
+    border-color:red;
+}
+
+.toggle-btn{
+    margin: -30px !important;
+}
+
+.intgrp{
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.forgot-section{
+  width: 400px;
+    margin: -5px auto;
+    border-radius: 5px;
+    padding: 1px;
+    background-image: url('../images/main/unsplash-NuFUbftUu_s-unsplash.jpg');
+    background-size: cover;
+}
+
+.input-group{
+  display:flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.signin-section{
+    background-image: url('../images/main/unsplash-NuFUbftUu_s-unsplash.jpg');
+    background-size: cover;
+}
+
+.butn a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+
+/* Swiper CSS */
+
+
+.swiper-slider{
+    padding: 100px;
+    z-index: 1;
+    position: relative;
+    width: 100% !important;
+    
+}
+
+body {
+    position: relative;
+    height: 100%;
+  }
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+  .swiper {
+    width: 100% ;
+    height: 100% ;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 530px;
+    width: 100%;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+  }
+  
+  .swiper-button-next, .swiper-button-prev {
+    color: black !important;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet-active{
+    background-color: #000 !important;
+    width: 60px;
+    height: 6px;
+    background: white; 
+    border-radius: 10px; 
+    transition: width 0.3s ease-in-out;
+  }
+
+  .testimonial{
+    padding-top: 100px !important;
+    padding-bottom: 20px !important;
+    padding-left: 100px !important;
+    justify-content: center;
+    justify-items: center;
+  }
+
+.stars {
+    font-size: 30px;
+    display: flex;
+    justify-content: center !important;
+}
+.star {
+    color: grey;
+}
+.star.filled {
+    color: gold; 
+}
+
+.title{
+    padding-top: 100px !important;
+    padding-bottom: 50px !important;
+}
+
+    /* Map Css */
+
+#map {
+    height: 300px;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+/* Footer CSS */
+
+.social-media a{
+    text-decoration: none;
+    color: inherit;
+}

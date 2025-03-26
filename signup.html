@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>Sign Up</title>
+    <link rel="icon" href="./public/images/main/Slack logo PNG.jpeg" type="image/x-icon" />
+</head>
+
+<body class="signup-section">
+    <div class="container">
+        <div class="signup-section">
+        <form action="" id="form">
+            <h1><b>Sign Up</b></h1>
+
+            <div class="input-group">
+                <label for="username"><b>Username</b></label>
+                <input type="text" id="username" name="username" placeholder="Enter your name" required
+                pattern="[A-Za-z]{1,15}">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="email"><b>Email</b></label>
+                <input type="text" id="email" name="email" placeholder="Enter your email" required
+                pattern=".+@gmail\.com">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="password"><b>Password</b></label>
+                <div class="input-container">
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+                    <span class="toggle-btn" onclick="togglePassword('password')">👁️</span>
+                </div>
+                <div class="error"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="cpassword"><b>Confirm Password</b></label>
+                <div class="input-container">
+                    <input type="password" id="cpassword" name="cpassword" placeholder="Enter Confirm Password" required
+                    oninput="this.setCustomValidity(this.value !== document.getElementById('password').value ? 'Passwords do not match.' : '')">
+                    <span class="toggle-btn" onclick="togglePassword('cpassword')">👁️</span>
+                </div>
+                <div class="error"></div>
+            </div>
+            <div>
+                <button class="butn" type="submit"><b><a href="./index.html">Sign Up</a></b></button>
+        </form>
+        </div>
+    </div>
+    <script>
+        function togglePassword(id) {
+            const passwordField = document.getElementById(id);
+            const toggleBtn = passwordField.nextElementSibling;
+
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                toggleBtn.textContent = '🚫';
+            } else {
+                passwordField.type = 'password';
+                toggleBtn.textContent = '👁️';
+            }
+        }
+    </script>
+</body>
+</html>

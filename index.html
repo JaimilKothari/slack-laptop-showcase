@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Slack</title>
+    <link rel="icon" href="./public/images/main/Slack logo PNG.jpeg" type="image/x-icon" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./public/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+   
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <img
+            id="logo"
+            src="public/images/main/scott-webb-bmmcfZqSjBU-unsplash.jpg"
+            height="40px"
+            alt="logo"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><b>Home</b></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutus-section"><b>About Us</b></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <b>Products</b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#products-section">Laptop</a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#!"
+                      onclick="alert('No item yet')"
+                      >Mobile</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#!"
+                      onclick="alert('No item yet')"
+                      >Tablet</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#!"
+                      onclick="alert('No item yet')"
+                      >Watch</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contactus-section"
+                  ><b>Contact Us</b></a
+                >
+              </li>
+              <!-- <li class="nav-item">
+                            <a class="nav-link" href="#"><b>Sign In</b></a>
+                        </li> -->
+            </ul>
+            <form class="d-flex">
+              <button class="button btn2" type="submit">
+                <a href="./signin.html">Sign In</a>
+              </button>
+              <button class="button btn-outline-success" type="submit">
+                <a href="./signup.html">Sign Up</a>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+      <!--SWIPER-->
+      <div class="swiper-slider">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./public/images/main/dell-8pb7Hq539Zw-unsplash.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./public/images/main/christopher-gower-vjMgqUkS8q8-unsplash.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./public/images/main/windows-C6T6vr1sQI0-unsplash.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./public/images/main/alex-knight-j4uuKnN43_M-unsplash.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./public/images/main/giorgio-trovato-8krX0HkXw8c-unsplash.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./public/images/main/magnet-me-sOObVT48N3I-unsplash.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./public/images/main/liana-mikah-sK1nYjXcXCY-unsplash.jpg"
+              />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <!--CARDS-->
+      <div class="container text-center" id="products-section">
+        <div class="card-section" id="card-section">
+          <div class="row">
+            <div class="col">
+              <div class="card text-center" style="width: 18rem">
+                <img
+                  src="public/images/main/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg"
+                  class="card-img-top"
+                  alt="Laptop"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Laptop</h5>
+                  <p class="card-text">
+                    Whatever you’re doing, wherever you’re going, there’s an
+                    Slack laptop for you!
+                  </p>
+                  <a href="./laptop-details.html" class="btn btn-primary"
+                    >Information</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="public/images/main/kari-shea-1SAnrIxw5OY-unsplash.jpg"
+                  class="card-img-top"
+                  alt="Laptop"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Laptop</h5>
+                  <p class="card-text">
+                    Whatever you’re doing, wherever you’re going, there’s an
+                    Slack laptop for you!
+                  </p>
+                  <a href="./laptop-details.html" class="btn btn-primary"
+                    >Information</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="public/images/main/christin-hume-mfB1B1s4sMc-unsplash.jpg"
+                  class="card-img-top"
+                  alt="Laptop"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Laptop</h5>
+                  <p class="card-text">
+                    Whatever you’re doing, wherever you’re going, there’s an
+                    Slack laptop for you!
+                  </p>
+                  <a href="./laptop-details.html" class="btn btn-primary"
+                    >Information</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="public/images/main/burst-kUqqaRjJuw0-unsplash.jpg"
+                  class="card-img-top"
+                  alt="Laptop"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Laptop</h5>
+                  <p class="card-text">
+                    Whatever you’re doing, wherever you’re going, there’s an
+                    Slack laptop for you!
+                  </p>
+                  <a href="./laptop-details.html" class="btn btn-primary"
+                    >Information</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="public/images/main/christopher-gower-m_HRfLhgABo-unsplash.jpg"
+                  class="card-img-top"
+                  alt="Laptop"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Laptop</h5>
+                  <p class="card-text">
+                    Whatever you’re doing, wherever you’re going, there’s an
+                    Slack laptop for you!
+                  </p>
+                  <a href="./laptop-details.html" class="btn btn-primary"
+                    >Information</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="public/images/main/samantha-borges-gXsJ9Ywb5as-unsplash.jpg"
+                  class="card-img-top"
+                  alt="Laptop"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Laptop</h5>
+                  <p class="card-text">
+                    Whatever you’re doing, wherever you’re going, there’s an
+                    Slack laptop for you!
+                  </p>
+                  <a href="./laptop-details.html" class="btn btn-primary"
+                    >Information</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="public/images/main/ales-nesetril-Im7lZjxeLhg-unsplash.jpg"
+                  class="card-img-top"
+                  alt="Laptop"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Laptop</h5>
+                  <p class="card-text">
+                    Whatever you’re doing, wherever you’re going, there’s an
+                    Slack laptop for you!
+                  </p>
+                  <a href="./laptop-details.html" class="btn btn-primary"
+                    >Information</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="public/images/main/nordwood-themes-_sg8nXmpWDM-unsplash.jpg"
+                  class="card-img-top"
+                  alt="Laptop"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Laptop</h5>
+                  <p class="card-text">
+                    Whatever you’re doing, wherever you’re going, there’s an
+                    Slack laptop for you!
+                  </p>
+                  <a href="./laptop-details.html" class="btn btn-primary"
+                    >Information</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="public/images/main/stefan-stefancik-5p_7M5MP2Iw-unsplash.jpg"
+                  class="card-img-top"
+                  alt="Laptop"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Laptop</h5>
+                  <p class="card-text">
+                    Whatever you’re doing, wherever you’re going, there’s an
+                    Slack laptop for you!
+                  </p>
+                  <a href="./laptop-details.html" class="btn btn-primary"
+                    >Information</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="public/images/main/ben-kolde-t9DooibgMEk-unsplash.jpg"
+                  class="card-img-top"
+                  alt="Laptop"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Laptop</h5>
+                  <p class="card-text">
+                    Whatever you’re doing, wherever you’re going, there’s an
+                    Slack laptop for you!
+                  </p>
+                  <a href="./laptop-details.html" class="btn btn-primary"
+                    >Information</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="public/images/main/stefan-stefancik-5p_7M5MP2Iw-unsplash.jpg"
+                  class="card-img-top"
+                  alt="Laptop"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Laptop</h5>
+                  <p class="card-text">
+                    Whatever you’re doing, wherever you’re going, there’s an
+                    Slack laptop for you!
+                  </p>
+                  <a href="./laptop-details.html" class="btn btn-primary"
+                    >Information</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="public/images/main/cookie-the-pom-gySMaocSdqs-unsplash.jpg"
+                  class="card-img-top"
+                  alt="Laptop"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Laptop</h5>
+                  <p class="card-text">
+                    Whatever you’re doing, wherever you’re going, there’s an
+                    Slack laptop for you!
+                  </p>
+                  <a href="./laptop-details.html" class="btn btn-primary"
+                    >Information</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="public/images/main/bram-naus-n8Qb1ZAkK88-unsplash.jpg"
+                  class="card-img-top"
+                  alt="Laptop"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Laptop</h5>
+                  <p class="card-text">
+                    Whatever you’re doing, wherever you’re going, there’s an
+                    Slack laptop for you!
+                  </p>
+                  <a href="./laptop-details.html" class="btn btn-primary"
+                    >Information</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="public/images/main/anete-lusina-zwsHjakE_iI-unsplash.jpg"
+                  class="card-img-top"
+                  alt="Laptop"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Laptop</h5>
+                  <p class="card-text">
+                    Whatever you’re doing, wherever you’re going, there’s an
+                    Slack laptop for you!
+                  </p>
+                  <a href="./laptop-details.html" class="btn btn-primary"
+                    >Information</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="public/images/main/headway-5QgIuuBxKwM-unsplash.jpg"
+                  class="card-img-top"
+                  alt="Laptop"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Laptop</h5>
+                  <p class="card-text">
+                    Whatever you’re doing, wherever you’re going, there’s an
+                    Slack laptop for you!
+                  </p>
+                  <a href="./laptop-details.html" class="btn btn-primary"
+                    >Information</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--TESTIMONIAL-->
+      <div class="container-fluid text-center">
+        <h3 class="title" p-0><b>REVIEWS</b></h3>
+      </div>
+      <div class="swiper testimonial">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="./public/images/main/ícone de sinal do usuário_ símbolo de pessoa. avatar humano. vetor isolado em backogrund branco_" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Varun Shah</h5>
+                <p class="card-text">Good services provided by the team.</p>
+    
+                <div class="stars">
+                  <span class="star filled">&#9733;</span> <!-- Gold Star -->
+                  <span class="star filled">&#9733;</span> <!-- Gold Star -->
+                  <span class="star filled">&#9733;</span> <!-- Gold Star -->
+                  <span class="star">&#9733;</span> <!-- Grey Star -->
+                  <span class="star">&#9733;</span> <!-- Grey Star -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="./public/images/main/ícone de sinal do usuário_ símbolo de pessoa. avatar humano. vetor isolado em backogrund branco_" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Moksha Bhavsar</h5>
+                <p class="card-text">Amazing work by the team and the project is really nice.</p>
+    
+                <div class="stars">
+                  <span class="star filled">&#9733;</span> <!-- Gold Star -->
+                  <span class="star filled">&#9733;</span> <!-- Gold Star -->
+                  <span class="star filled">&#9733;</span> <!-- Gold Star -->
+                  <span class="star filled">&#9733;</span> <!-- Gold Star -->
+                  <span class="star">&#9733;</span> <!-- Grey Star -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="./public/images/main/ícone de sinal do usuário_ símbolo de pessoa. avatar humano. vetor isolado em backogrund branco_" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Gauravi Bhatt</h5>
+                <p class="card-text">One of the best services, looking forwrd to work them in future.</p>
+    
+                <div class="stars">
+                  <span class="star filled">&#9733;</span> <!-- Gold Star -->
+                  <span class="star filled">&#9733;</span> <!-- Gold Star -->
+                  <span class="star filled">&#9733;</span> <!-- Gold Star -->
+                  <span class="star filled">&#9733;</span> <!-- Gold Star -->
+                  <span class="star filled">&#9733;</span> <!-- Gold Star -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="./public/images/main/ícone de sinal do usuário_ símbolo de pessoa. avatar humano. vetor isolado em backogrund branco_" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Riddhi Shah</h5>
+                <p class="card-text">Satisfied by the work done on project by the team.</p>
+    
+                <div class="stars">
+                  <span class="star filled">&#9733;</span> <!-- Gold Star -->
+                  <span class="star filled">&#9733;</span> <!-- Gold Star -->
+                  <span class="star filled">&#9733;</span> <!-- Gold Star -->
+                  <span class="star">&#9733;</span> <!-- Grey Star -->
+                  <span class="star">&#9733;</span> <!-- Grey Star -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="./public/images/main/ícone de sinal do usuário_ símbolo de pessoa. avatar humano. vetor isolado em backogrund branco_" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Abhiraj Parmar</h5>
+                <p class="card-text">One of the best services, looking forwrd to work them in future.</p>
+    
+                <div class="stars">
+                  <span class="star filled">&#9733;</span> <!-- Gold Star -->
+                  <span class="star filled">&#9733;</span> <!-- Gold Star -->
+                  <span class="star filled">&#9733;</span> <!-- Gold Star -->
+                  <span class="star filled">&#9733;</span> <!-- Gold Star -->
+                  <span class="star">&#9733;</span> <!-- Grey Star -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="./public/images/main/ícone de sinal do usuário_ símbolo de pessoa. avatar humano. vetor isolado em backogrund branco_" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Harsh Shah</h5>
+                <p class="card-text">Amazing work by the team and the project is really nice.</p>
+          
+    
+                <div class="stars">
+                  <span class="star filled">&#9733;</span> <!-- Gold Star -->
+                  <span class="star filled">&#9733;</span> <!-- Gold Star -->
+                  <span class="star filled">&#9733;</span> <!-- Gold Star -->
+                  <span class="star filled">&#9733;</span> <!-- Gold Star -->
+                  <span class="star filled">&#9733;</span> <!-- Gold Star -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map -->
+       <div class="container p-5">
+        <div class="title text-center"><h2><b>Map</b></h2></div>
+        <div id="map"></div>
+       </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+      <section
+        class="section"
+        style="background-color: whitesmoke"
+        id="aboutus-section"
+      >
+        <div
+          class="container text-center text-md-start"
+          style="background-color: whitesmoke"
+        >
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <b>Slack</b>
+              </h6>
+              <p>
+                Whatever you need from a laptop-power, creative tools, bold
+                style, and more-there's an Slack laptop just for you.
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <b>Products</b>
+              </h6>
+              <p>
+                <a href="#card-section" class="text-reset">Laptop</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset" onclick="alert('No item yet')"
+                  >Mobile</a
+                >
+              </p>
+              <p>
+                <a href="#!" class="text-reset" onclick="alert('No item yet')"
+                  >Tablet</a
+                >
+              </p>
+              <p>
+                <a href="#!" class="text-reset" onclick="alert('No item yet')"
+                  >Watch</a
+                >
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <b>Useful links</b>
+              </h6>
+              <p>
+                <a
+                  href="#!"
+                  class="text-reset"
+                  onclick="alert('Price is yet to make')"
+                  >Pricing</a
+                >
+              </p>
+              <p>
+                <a href="#!" class="text-reset" onclick="alert('No orders yet')"
+                  >Orders</a
+                >
+              </p>
+              <p>
+                <a href="#!" class="text-reset" onclick="alert('Settings')"
+                  >Settings</a
+                >
+              </p>
+              <p>
+                <a
+                  href="#!"
+                  class="text-reset"
+                  onclick="alert('Privacy Policy')"
+                  >Help</a
+                >
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4"><b>Contact</b></h6>
+              <p>NewYork, NY 10012, US</p>
+              <p>
+                <a href="mailto:slack@gmail.com" class="text-reset"
+                  >slack@gmail.com</a
+                >
+              </p>
+              <p>+01 23456788</p>
+              <p>+01 23456789</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="d-flex justify-content-center"
+        style="background-color: whitesmoke"
+        id="contactus-section"
+      >
+        <div class="me-2 d-none d-lg-block justify-content-center">
+          <span>Get connected with us:</span>
+        </div>
+        <div class="social-media">
+          <a href="https://x.com/" target="_blank" aria-label="X">
+            <img
+              src="public/images/main/Free Vector _ New 2023 twitter logo X icon design.jpeg"
+              alt="X"
+              height="25px"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            aria-label="LinkeIn"
+          >
+            <img
+              src="public/images/main/Premium Vector _ Square Linkedin Logo Isolated on White Background.jpeg"
+              alt="LinkedIn"
+              height="25px"
+            />
+          </a>
+          <a href="https://medium.com/" target="_blank" aria-label="Medium">
+            <img
+              src="public/images/main/A more expressive Medium — starting with Medium.jpeg"
+              alt="Medium"
+              height="25px"
+              width="25%"
+            />
+          </a>
+        </div>
+      </section>
+
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2025 Copyright
+      </div>
+    </footer>
+
+
+    <!-- Script js -->
+    <script src="./public/js/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+
+      var swiper = new Swiper(".testimonial", {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    freeMode: true,
+    autoplay:{
+      delay: 3000,
+      disableOnInteraction: false,
+    }
+    // mousewheel: true,
+    // keyboard: true,
+  });
+    </script>
+
+    <!-- Initialize Map  -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+    // Set the default location to Baroda, Gujarat, India
+    var barodaLat = 22.3072;
+    var barodaLon = 73.1812;
+
+    // Initialize the map centered at Baroda
+    var map = L.map('map').setView([barodaLat, barodaLon], 13);
+
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Add a marker for Baroda
+    L.marker([barodaLat, barodaLon]).addTo(map)
+        .bindPopup('Vadodara, Gujarat, India')
+        .openPopup();
+</script>
+
+  </body>
+</html>

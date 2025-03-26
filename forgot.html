@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="icon" href="./public/images/main/Slack logo PNG.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+</head>
+<body class="forgot-section">
+    <div class="container">
+        <div class="forgot-section">
+        <form action="" id="form">
+            <h2 align="center"><b>Forgot Password</b></h2><br>
+
+            <div class="input-group">
+                <label for="password"><b>New Password</b></label>
+                <div class="input-container">
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+                    <span class="toggle-btn" onclick="togglePassword('password')">👁️</span>
+                </div>
+                <div class="error"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="cpassword"><b>Confirm Password</b></label>
+                <div class="input-container">
+                    <input type="password" id="cpassword" name="cpassword" placeholder="Enter Confirm Password" required
+                    oninput="this.setCustomValidity(this.value !== document.getElementById('password').value ? 'Passwords do not match.' : '')">
+                    <span class="toggle-btn" onclick="togglePassword('cpassword')">👁️</span>
+                </div>
+                <div class="error"></div>
+            </div>
+            <div>
+                <button class="butn" type="submit"><b><a href="./signin.html">Reset Password</a></b></button>
+        </form>
+        </div>
+    </div>
+    <script>
+        function togglePassword(id) {
+            const passwordField = document.getElementById(id);
+            const toggleBtn = passwordField.nextElementSibling;
+
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                toggleBtn.textContent = '🚫';
+            } else {
+                passwordField.type = 'password';
+                toggleBtn.textContent = '👁️';
+            }
+        }
+    </script>
+</body>
+</html>
